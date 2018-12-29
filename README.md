@@ -2,7 +2,7 @@
 
 - Alpine Linux v3.8
 - OpenSSL >= v1.1.1
-- nginx v1.15.7
+- nginx v1.15.8
     - with http2
     - without mail
     - without stream
