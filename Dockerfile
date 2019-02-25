@@ -1,4 +1,4 @@
-FROM alpine:3.8
+FROM alpine:3.9
 
 ENV NGX_VERSION=1.15.8 \
 	NGX_BROTLI_REPO=https://github.com/eustas/ngx_brotli.git \
@@ -56,14 +56,9 @@ RUN GPG_KEYS=B0F4253373F8F6F510D42178520A9993A1C052F8 \
 		libtool \
 		linux-headers \
 		make \
+		openssl-dev \
 		pcre-dev \
 		zlib-dev \
-	\
-	# Add build deps from edge.
-	&& echo http://dl-cdn.alpinelinux.org/alpine/edge/main \
-		>> /etc/apk/repositories \
-	# Add openssl-dev >= 1.1.1 to support TLS v1.3.
-	&& apk add --virtual .build-deps-edge --update 'openssl-dev>=1.1.1' \
 	\
 	&& mkdir -p /usr/src \
 	&& cd /usr/src \
@@ -115,7 +110,7 @@ RUN GPG_KEYS=B0F4253373F8F6F510D42178520A9993A1C052F8 \
 	\
 	# Clean build-deps.
 	&& cd /etc/nginx \
-	&& apk del .build-deps-edge .build-deps \
+	&& apk del .build-deps \
 	&& rm -rf /var/cache/apk/* /usr/src /etc/nginx/*.default \
 	\
 	&& chown nginx:nginx /var/cache/nginx
