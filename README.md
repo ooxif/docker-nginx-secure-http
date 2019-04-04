@@ -19,7 +19,7 @@
 ## Caveat
 
 - nginx's master process runs as `nginx` (not `root`).
-    - nginx can not listen on ports < 1024.
+    - nginx cannot listen on ports < 1024.
 
 ## Usage (simple, static)
 
