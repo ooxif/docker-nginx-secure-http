@@ -1,6 +1,6 @@
-FROM alpine:3.9.4
+FROM alpine:3.10.0
 
-ENV NGX_VERSION=1.17.0 \
+ENV NGX_VERSION=1.17.1 \
 	NGX_BROTLI_REPO=https://github.com/eustas/ngx_brotli.git \
 	NGX_BROTLI_COMMIT_REF=v0.1.2 \
 	NGX_HEADERS_MORE_VERSION=0.33
