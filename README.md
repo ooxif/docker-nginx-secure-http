@@ -1,6 +1,6 @@
  # ooxif/nginx-secure-http
 
-- Alpine Linux v3.10.1
+- Alpine Linux v3.10.2
     - OpenSSL >= v1.1.1 (supports TLS v1.3)
 - nginx v1.17.3
     - with http2
@@ -9,8 +9,8 @@
 
 ## Additional modules
 
-- ngx_brotli (master 2019-08-16)
-    - https://github.com/eustas/ngx_brotli/tree/7fab0418dedd1c4230877b357a1ca7cc7c355d84
+- ngx_brotli (master 2019-09-03)
+    - https://github.com/google/ngx_brotli/tree/08ee2743a342ee9d4a1d9dd952fbb8f63cab964c
     - Brotli: a generic-purpose lossless compression algorithm
 - ngx_headers_more v0.33
     - https://github.com/openresty/headers-more-nginx-module
