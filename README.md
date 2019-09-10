@@ -9,7 +9,7 @@
 
 ## Additional modules
 
-- ngx_brotli (master 2019-09-03)
+- ngx_brotli (master 2019-09-10)
     - https://github.com/google/ngx_brotli/tree/e505dce68acc190cc5a1e780a3b0275e39f160ca
     - Brotli: a generic-purpose lossless compression algorithm
 - ngx_headers_more v0.33
