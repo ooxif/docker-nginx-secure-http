@@ -1,8 +1,8 @@
  # ooxif/nginx-secure-http
 
-- Alpine Linux v3.10.2
+- Alpine Linux v3.10.3
     - OpenSSL >= v1.1.1 (supports TLS v1.3)
-- nginx v1.17.4
+- nginx v1.17.6
     - with http2
     - without mail
     - without stream
